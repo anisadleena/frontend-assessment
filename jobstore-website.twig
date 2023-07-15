@@ -1,0 +1,455 @@
+<style>
+    .title{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 40px;
+        color:blue;
+        text-rendering: auto;
+    }
+.css-header{
+    margin-left: 600px;
+    margin-top: -38px;
+}
+.ml-10{
+    /* margin-left: 100px; */
+    right: 700px;
+    display: inline-block;
+    /* height: 110px; */
+    /* line-height: 110px; */
+    padding: 0 15px;
+    /* float: right; */
+}
+.emp-button{
+    display: block;
+    width: 150px;
+    /* height: 35px; */
+    line-height: 35px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: #0704e1;
+    border: 2px solid #0704e1;
+    border-radius: 25px;
+    /* margin: 40px 0; */
+    float: right;
+    margin-top: -10px;
+}
+.font-text{
+    font-weight: 700;
+    color: #666;
+}
+.container-left{
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background: url('jb-left.jpg') no-repeat center/cover;
+    float: left;
+    vertical-align: top;
+}
+.container-right{
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background: url('jb-right.jpg') no-repeat center/cover;
+    float: right;
+    vertical-align: top;
+}
+.container-middle{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #4849d5, #3f41d9, #3638dd, #2b2ee0, #1e22e3);
+    vertical-align: top;
+}
+.middle-text{
+    text-align: center;
+    color:#fff;
+    font-size: xx-large;
+    margin-top: 70px;
+}
+.search-container button {
+  /* float: center; */
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #fff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.header-box{
+    display: block;
+    width: 80%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1%;
+    margin-left: 10%;
+    margin-top: 12%;
+}
+.search-job{
+    height: 55px;
+    line-height: 55px;
+    font-size: 1rem;
+       font-weight: 300;
+       font-family: 'Noto sans',sans-serif;
+    color: #000;
+    border: none;
+    padding: 0 1%;
+    vertical-align: middle;
+    outline: none;
+    width: 100%;
+}
+.search-location{
+    height: 55px;
+    line-height: 55px;
+    font-size: 1rem;
+        font-weight: 300;
+        font-family: 'Noto sans',sans-serif;
+    color: #000;
+    border: none;
+    padding: 0 1.5%;
+    vertical-align: middle;
+    outline: none;
+}
+.search-divider{
+    height: 40px;
+    border-left: 1px solid #ddd;
+    /* margin: 0 1.5%; */
+    margin-left: -380px;
+    vertical-align: middle;
+}
+.search-submit{
+    display: inline-block;
+    width: 13%;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    vertical-align: middle;
+    outline: none;
+    border: 2px solid transparent;
+    background: url('search-icon-white.png') #1f1de4 no-repeat center/30px;
+    margin-left: 31px;
+    margin-top: 10px;
+}
+.pin-location{
+    width: 5%;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px -5.5% 5px 7%;
+    vertical-align: top;
+    background: url('pin-location.png') no-repeat center/25px;
+    cursor: pointer;
+    border: white;
+}
+.user-in{
+    padding-top: 60px;
+}
+.user-in img{
+    /* background: url('icon_user_in .png') no-repeat center/25px;  */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 1.5%;
+    vertical-align: middle;
+    padding-left: 130px;
+}
+.text-sign{
+    color: white;
+    line-height: 1rem;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.underline{
+    text-decoration: underline;
+}
+.box-title{
+    display:block;
+    width:100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color:#515357;
+    margin-top: 40px;
+    font-family: 'Noto sans',sans-serif;
+}
+.view-all-trending-text{
+    display:block;
+    width:100%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color:#333;
+    margin-top: 40px;
+    font-family: 'Noto sans',sans-serif;
+}
+.view-all-trending-text:hover{
+    color :#0704e1;
+}
+.separator{
+    /* background: url('icon-separator.png')  #f9fbfc no-repeat center/20px; */
+    display: block;
+    width: 100%;
+    height: 25px;
+    background: url('icon-separator.png') #f9fbfc no-repeat center;
+    padding: 1rem 0;
+    margin-top : 50px;
+}
+.title{
+    display: inline-block;
+    width: 15%;
+    line-height: 1.85rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    vertical-align: top;
+    /* margin-right:20px; */
+}
+.title-blue{
+    color :#0704e1;
+}
+.title-blue:hover{
+    color: #333;
+}
+.title-jb{
+    font-family: 'Tahoma', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 40px;
+    margin-right: 10px;
+    color:blue;
+    text-rendering: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  height : 200px;
+  margin-right: 550px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<header>
+    <div class="header-content">
+        <div class = "title-jb"><h1>jobstore.com</h1></div>
+
+            <div class = "css-header">
+                <a class="ml-10 font-text" >Browse jobs</a>
+                <a class="ml-10 font-text" >Companies</a>
+                <a class="ml-10 font-text" >Download App</a>
+                <!-- <div> -->
+                    <a class="ml-10 font-text " style = "margin-left: 60px" >Sign in</a>
+                    <a class="ml-10 font-text" >Sign up</a>
+                <!-- </div> -->
+                <button class="emp-button">Employers</button>
+            </div>
+       
+    </div>
+</header>
+<div style = "background-color: blue; width:100%; height:500px; margin-top: 80px">
+    <div class = "container-left"></div>
+    <div class = "container-middle">
+        <div class = "middle-text" >10,217 jobs available in Malaysia</div>
+        <div class="search-container">
+            <div class="header-box">
+                <form method="GET">
+                    <input type="text" class = "search-job" placeholder="Search by job title or keyword" name="key">
+                    <span class ="search-divider"></span>
+                    <input type="text" class ="search-location" placeholder="Location or city" name="loc">
+                    <input class ="pin-location">
+                    <input  class="search-submit">
+                </form>
+            </div>
+        </div>
+        <div class="user-in">
+            <img src="icon_user_in .png">
+            <span class = "text-sign underline"> Sign in</span>
+            <span class = "text-sign"> or </span>
+            <span class = "text-sign underline"> Sign up</span>
+            <span class = "text-sign"> to see your saved jobs on all your devices</span>
+        </div>
+    </div>
+    <div class = "container-right">
+</div>
+
+    <div class = 'box-title'> Job Trending </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="slide 1.png" style="width:650px; height : 200px;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="slide 2.png" style="width:650px; height : 200px;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="slide 3.png" style="width:650px; height : 200px;">
+        </div> 
+        
+        <div class="mySlides fade">
+            <img src="slide 4.png" style="width:650px; height : 200px;">
+        </div>        
+
+        <div class="mySlides fade">
+            <img src="slide 5.png" style="width:650px; height : 200px;">
+        </div>        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    </div>
+    <div style = 'margin-top: 310px;'>
+      <div class = 'view-all-trending-text'> view all trending jobs </div>
+      <div class = 'separator'></div>
+      <div class = 'box-title'> Popular Searches </div>
+
+        <span class ='title' style = 'padding-left: 250px;'>Popular</span>
+            <span class ='title title-blue' >Sales / Marketing jobs</span>
+            <span class ='title title-blue' >Accounting / Auditing jobs</span>
+            <span class ='title title-blue'  >Administrative / Clerical jobs </span>
+        <div style = 'margin-top: -30px;'>
+            <span class ='title' style = 'padding-left: 250px;'>Categories</span>
+                <span class ='title title-blue' >Information Technology jobs</span>
+                <span class ='title title-blue' >Engineering jobs</span>
+                <span class ='title title-blue'  >F&B / Tourism / Hospitality jobs </span>
+        </div>
+        <div style = 'padding-left: 500px; margin-top: -30px;'>
+            <span class ='title title-blue' style = 'width : 20%;' >Customer Service jobs</span>
+            <span class ='title'> View all categories </span>
+        </div>
+
+        <span class ='title' style = 'padding-left: 250px;'>Popular</span>
+        <span class ='title title-blue' style = 'width : 7%;' >Kuala Lumpur</span>
+        <span class ='title title-blue' style = 'width : 7%;' >Petaling Jaya</span>
+        <span class ='title title-blue' style = 'width : 7%;' >Shah Alam</span>
+        <span class ='title title-blue' style = 'width : 7%;' >Puchong</span>
+        <span class ='title title-blue' style = 'width : 7%;' >Johor Bahru</span>
+        <span class ='title title-blue' style = 'width : 7%;' >Subang Jaya</span>
+        <span class ='title title-blue' style = 'width : 7%;' >Klang</span>
+        <div style = 'margin-top: -30px;'>
+            <span class ='title' style = 'padding-left: 250px;'>locations</span>
+            <span class ='title title-blue' style = 'width : 10%;'>Seri Kembangan</span>
+            <span class ='title title-blue' style = 'width : 10%;'>Selangor</span>
+            <span class ='title title-blue' style = 'width : 10%;'>Ipoh</span>
+            <span class ='title'> View all locations </span>
+        </div>
+    </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
